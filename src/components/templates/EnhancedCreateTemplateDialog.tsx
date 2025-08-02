@@ -496,7 +496,7 @@ export function EnhancedCreateTemplateDialog({
                       maxSize={form.watch('max_file_size_mb')}
                       enforceZipForLargeFiles={true}
                       largeFileThreshold={25}
-                      bucketName="Template Files"
+                      bucketName="template_files"
                       folder="templates"
                       onFileUpload={(url, fileInfo) => {
                         form.setValue('file_url', url);
@@ -510,7 +510,7 @@ export function EnhancedCreateTemplateDialog({
                       description="Recommended: 800x600px, Max: 10MB"
                       accept="image/*"
                       maxSize={10}
-                      bucketName="Template Files"
+                      bucketName="template_files"
                       folder="previews"
                       onFileUpload={(url) => {
                         form.setValue('preview_image_url', url);
@@ -528,7 +528,7 @@ export function EnhancedCreateTemplateDialog({
                         description="Upload a watermarked version to prevent theft"
                         accept="image/*"
                         maxSize={10}
-                        bucketName="Template Files"
+                        bucketName="template_files"
                         folder="watermarked-previews"
                         onFileUpload={(url) => {
                           form.setValue('watermarked_preview_url', url);
